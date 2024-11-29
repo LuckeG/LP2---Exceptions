@@ -49,4 +49,9 @@ public class Reserva {
         System.out.println("CheckOut: "+sdf.format(checkOut));
         System.out.println("Duração: "+duracao());
     }
+
+    public void atualizarDatas(Date checkIn, Date checkOut){
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
+    }
 }
