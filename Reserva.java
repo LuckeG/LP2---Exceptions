@@ -45,8 +45,8 @@ public class Reserva {
 
     public void exibirReserva(){
         System.out.println("Quarto: "+numeroQuarto);
-        System.out.println("CheckIn: "+checkIn);
-        System.out.println("CheckOut: "+checkOut);
+        System.out.println("CheckIn: "+sdf.format(checkIn));
+        System.out.println("CheckOut: "+sdf.format(checkOut));
         System.out.println("Duração: "+duracao());
     }
 }
