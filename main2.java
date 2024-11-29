@@ -13,5 +13,10 @@ public class Main {
         Reserva r1 = new Reserva(4, checkin, checkout);
 
         r1.exibirReserva();
+
+        checkin = sdf.parse("01-11-2024");
+        checkout = sdf.parse("20-11-2024");
+        r1.atualizarDatas(checkin, checkout);
+        r1.exibirReserva();
     }
 }
